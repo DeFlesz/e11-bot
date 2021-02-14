@@ -1,6 +1,6 @@
 module.exports = {
 	name: 'set-role',
-	description: 'Usuwa ci wybraną rolę związaną z tym botem (nie usuwa roli typu admin, mod itd.), by użyć: {prefix}remove-role {role-name}',
+	description: 'Ustawia ci wybraną rolę związaną z tym botem, by użyć: {prefix}set-role {role-name}',
 	execute(msg, args, serverRoles) {
         if (!args.length) {
             return msg.channel.send(`Nie podałeś argumentów!`);
