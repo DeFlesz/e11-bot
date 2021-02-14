@@ -1,0 +1,30 @@
+{
+  "name": "e11-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot made for e11",
+  "main": "index.js",
+  "scripts": {
+    "run": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeFlesz/e11-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "discordjs"
+  ],
+  "author": "Antoni Nawrocki",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/DeFlesz/e11-bot/issues"
+  },
+  "homepage": "https://github.com/DeFlesz/e11-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "nodemon": "^2.0.7",
+    "opusscript": "0.0.7"
+  }
+}
