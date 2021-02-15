@@ -19,8 +19,8 @@ refreshRoles();
 
 //everything that happens on startup of this bot
 client.on('ready', () => {
-  console.log(`Sprawny i gotowy do akcji - ${client.user.tag}!`);
-  //applyChanges();
+    console.log(`Sprawny i gotowy do akcji - ${client.user.tag}!`);
+    applyChanges();
 
 });
 
