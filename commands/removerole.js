@@ -8,6 +8,7 @@ module.exports = {
 
 		if(serverRoles[args]){
             msg.member.roles.remove([serverRoles[args]]);
+            return msg.channel.send(`Usunąłeś sobie rolę "${args[0]}"!`)
 
         } else{
             return msg.channel.send(`Taka rola nie istnieje, bądź nie jest dostępna!`);

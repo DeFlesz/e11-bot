@@ -8,6 +8,7 @@ module.exports = {
 
 		if(serverRoles[args]){
             msg.member.roles.add([serverRoles[args]]);
+            return msg.channel.send(`Rola "${args[0]}" została ci przydzielona!`)
 
         } else{
             return msg.channel.send(`Taka rola nie istnieje, bądź nie jest dostępna!`);

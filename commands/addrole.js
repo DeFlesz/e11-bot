@@ -8,6 +8,9 @@ module.exports = {
         } else if (!args.length) {
             return msg.channel.send(`Nie podałeś argumentów!`);
         }
+        if(serverRoles[args[0]]){
+            return msg.channel.send(`Rola o nazwie "${args[0]}" już istnieje!`);
+        }
 
         const role_name = args[0];
         const role_id = args[1];
@@ -20,5 +23,7 @@ module.exports = {
         });
 
         console.log(serverRoles);
+        
+        return msg.channel.send(`Rola ${args[0]} została dodana do puli ról`)
 	},
 };
