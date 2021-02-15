@@ -7,6 +7,8 @@ module.exports = {
 	    	return msg.channel.send(`Nie podałeś wystarczająco argumentów!`);
         } else if (!args.length) {
             return msg.channel.send(`Nie podałeś argumentów!`);
+        } else if (!msg.member.hasPermission('MANAGE_ROLES')){
+            return msg.channel.send(`Nie masz uprawnień do modyfikowania ról!`)
         }
         if(serverRoles[args[0]]){
             return msg.channel.send(`Rola o nazwie "${args[0]}" już istnieje!`);
